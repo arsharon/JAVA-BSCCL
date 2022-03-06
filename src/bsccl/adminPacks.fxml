@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bsccl.AdminPackageController">
+   <children>
+      <MenuBar layoutY="-3.0" prefHeight="35.0" prefWidth="600.0">
+         <menus>
+            <Menu fx:id="adminHome" mnemonicParsing="false" onAction="#adminHomeOnclick" text="Home" />
+            <Menu fx:id="adminInfo" mnemonicParsing="false" onAction="#adminInfoOnclick" text="Information" />
+            <Menu mnemonicParsing="false" text="Communication">
+               <items>
+                  <MenuItem fx:id="comMin" mnemonicParsing="false" onAction="#comWithMin" text="Ministry" />
+                  <MenuItem fx:id="comcus" mnemonicParsing="false" onAction="#comWithCus" text="Customer" />
+                  <Menu mnemonicParsing="false" text="Landing Station">
+                     <items>
+                        <MenuItem fx:id="comCox" mnemonicParsing="false" onAction="#comCox" text="Coxbazar" />
+                        <MenuItem fx:id="comKKT" mnemonicParsing="false" onAction="#comKKT" text="Kuakata" />
+                     </items>
+                  </Menu>
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Approval">
+               <items>
+                  <MenuItem fx:id="approveSupp" mnemonicParsing="false" onAction="#approveSupp" text="Supplier" />
+                  <MenuItem fx:id="approveCus" mnemonicParsing="false" onAction="#approveCus" text="Customer" />
+                  <MenuItem fx:id="approvePackages" mnemonicParsing="false" onAction="#approvePackages" text="Packages" />
+               </items>
+            </Menu>
+            <Menu fx:id="tracking" mnemonicParsing="false" onAction="#trackingOnClick" text="Track" />
+            <Menu fx:id="logout" mnemonicParsing="false" onAction="#logoutOnclick" text="LOGOUT" />
+         </menus>
+      </MenuBar>
+      <Label alignment="CENTER" layoutX="245.0" layoutY="38.0" prefHeight="53.0" prefWidth="111.0" text="Packages">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="78.0" layoutY="107.0" text="Pack ID" />
+      <Label layoutX="76.0" layoutY="142.0" text="Pack Bandwidth" />
+      <Label layoutX="78.0" layoutY="176.0" text="Pack Price" />
+      <TextField fx:id="packID" layoutX="186.0" layoutY="103.0" prefHeight="25.0" prefWidth="234.0" />
+      <TextField fx:id="packBand" layoutX="186.0" layoutY="138.0" prefHeight="25.0" prefWidth="234.0" />
+      <TextField fx:id="packPrice" layoutX="186.0" layoutY="172.0" prefHeight="25.0" prefWidth="234.0" />
+      <Button fx:id="packSave" layoutX="123.0" layoutY="214.0" mnemonicParsing="false" onAction="#packSaveOnclick" prefHeight="25.0" prefWidth="74.0" text="Save" />
+      <Button fx:id="packView" layoutX="383.0" layoutY="214.0" mnemonicParsing="false" onAction="#packViewOnclick" prefHeight="25.0" prefWidth="74.0" text="View" />
+      <TableView fx:id="tableview" layoutX="56.0" layoutY="248.0" prefHeight="145.0" prefWidth="472.0">
+         <columns>
+            <TableColumn fx:id="packIDadmin" prefWidth="151.0" text="Package ID" />
+            <TableColumn fx:id="packBandadmin" prefWidth="156.0" text="Bandwidth" />
+            <TableColumn fx:id="packPriceadmin" prefWidth="164.0" text="Price" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

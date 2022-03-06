@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bsccl.SuppTenderController">
+   <children>
+      <MenuBar layoutY="-1.0" prefHeight="30.0" prefWidth="600.0">
+         <menus>
+            <Menu fx:id="suppHome" mnemonicParsing="false" onAction="#suppHomeOnaction" text="Home" />
+            <Menu fx:id="suppPerformance" mnemonicParsing="false" onAction="#suppPerformanceOnaction" text="Work Performance" />
+            <Menu fx:id="suppBid" mnemonicParsing="false" onAction="#suppBidOnaction" text="Bid" />
+            <Menu fx:id="suppTender" mnemonicParsing="false" onAction="#suppTenderOnaction" text="Tender" />
+            <Menu fx:id="suppSupport" mnemonicParsing="false" onAction="#suppSupportOnaction" text="Support" />
+            <Menu fx:id="suppProfile" mnemonicParsing="false" onAction="#suppProfileOnaction" text="Profile" />
+            <Menu fx:id="logout" mnemonicParsing="false" onAction="#logout" text="LOGOUT" />
+         </menus>
+      </MenuBar>
+      <Label alignment="CENTER" layoutX="207.0" layoutY="52.0" prefHeight="69.0" prefWidth="188.0" text="Tender Notices">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="27.0" layoutY="166.0" prefHeight="69.0" prefWidth="281.0" text="Please Visit this URL for seeing notices :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="308.0" layoutY="152.0" prefHeight="96.0" prefWidth="215.0" text="http://www.bsccl.com/tender" textFill="#d31313">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

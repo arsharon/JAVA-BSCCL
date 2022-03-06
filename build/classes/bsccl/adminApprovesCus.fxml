@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bsccl.AdminApprovesCusController">
+   <children>
+      <MenuBar layoutY="-2.0" prefHeight="31.0" prefWidth="600.0">
+        <menus>
+            <Menu fx:id="adminHome" mnemonicParsing="false" onAction="#adminHomeOnclick" text="Home" />
+            <Menu fx:id="adminInfo" mnemonicParsing="false" onAction="#adminInfoOnclick" text="Information" />
+            <Menu mnemonicParsing="false" text="Communication">
+               <items>
+                  <MenuItem fx:id="comMin" mnemonicParsing="false" onAction="#comWithMin" text="Ministry" />
+                  <MenuItem fx:id="comcus" mnemonicParsing="false" onAction="#comWithCus" text="Customer" />
+                  <Menu mnemonicParsing="false" text="Landing Station">
+                     <items>
+                        <MenuItem fx:id="comCox" mnemonicParsing="false" onAction="#comCox" text="Coxbazar" />
+                        <MenuItem fx:id="comKKT" mnemonicParsing="false" onAction="#comKKT" text="Kuakata" />
+                     </items>
+                  </Menu>
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Approval">
+               <items>
+                  <MenuItem fx:id="approveSupp" mnemonicParsing="false" onAction="#approveSupp" text="Supplier" />
+                  <MenuItem fx:id="approveCus" mnemonicParsing="false" onAction="#approveCus" text="Customer" />
+               </items>
+            </Menu>
+            <Menu fx:id="tracking" mnemonicParsing="false" onAction="#trackingOnClick" text="Track" />
+            <Menu fx:id="logout" mnemonicParsing="false" onAction="#logoutOnclick" text="LOGOUT" />
+        </menus>
+      </MenuBar>
+      <TableView fx:id="tableview" layoutX="46.0" layoutY="186.0" prefHeight="200.0" prefWidth="520.0">
+        <columns>
+          <TableColumn fx:id="cusCompName" prefWidth="303.0" text="Company Name" />
+          <TableColumn fx:id="cusPackageId" prefWidth="215.0" text="Package ID" />
+        </columns>
+      </TableView>
+      <Button layoutX="228.0" layoutY="149.0" mnemonicParsing="false" onAction="#viewFromCusListOnclick" prefHeight="25.0" prefWidth="157.0" text="View" />
+      <Button layoutX="228.0" layoutY="110.0" mnemonicParsing="false" onAction="#appendOnCusListOnclick" prefHeight="25.0" prefWidth="157.0" text="Append" />
+      <TextField fx:id="compName" layoutX="46.0" layoutY="49.0" prefHeight="25.0" prefWidth="204.0" promptText="Company Name" />
+      <TextField fx:id="compPack" layoutX="348.0" layoutY="49.0" prefHeight="25.0" prefWidth="217.0" promptText="Package ID" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bsccl.SignupController">
+   <children>
+      <TextField fx:id="email" layoutX="149.0" layoutY="146.0" prefHeight="25.0" prefWidth="308.0" promptText="Email" />
+      <TextField fx:id="pass" layoutX="146.0" layoutY="188.0" prefHeight="25.0" prefWidth="314.0" promptText="Password" />
+      <Button alignment="CENTER" layoutX="193.0" layoutY="293.0" mnemonicParsing="false" onAction="#confirmForm" prefHeight="25.0" prefWidth="220.0" style="-fx-background-color: green;" text="CONFIRM">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="191.0" layoutY="337.0" mnemonicParsing="false" onAction="#declineForm" prefHeight="25.0" prefWidth="220.0" style="-fx-background-color: red;" text="DECLINE" textFill="#fffafa">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="173.0" layoutY="88.0" prefHeight="32.0" prefWidth="257.0" text="REGISTRATION FORM">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="designation" layoutX="260.0" layoutY="240.0" onAction="#designationOnaction" prefWidth="150.0" promptText="Designation" />
+      <Label layoutX="136.0" layoutY="228.0" prefHeight="49.0" prefWidth="124.0" text="Designation :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label fx:id="showMessageLabel" alignment="CENTER" layoutX="107.0" layoutY="117.0" prefHeight="29.0" prefWidth="386.0" textFill="#c90c0c">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="88.0" layoutY="149.0" text="Email:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="59.0" layoutY="190.0" text="Password:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="88.0" layoutY="14.0" prefHeight="61.0" prefWidth="425.0" style="-fx-background-color: brown;" text="Bangladesh Submarine Cable Company Limited (BSCCL)" textFill="#f2e9e9">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bsccl.LsDashController">
+   <children>
+      <MenuBar layoutY="-1.0" prefHeight="30.0" prefWidth="547.0">
+        <menus>
+          <Menu fx:id="lsHome" mnemonicParsing="false" onAction="#lsHomeOnclick" text="Home" />
+          <Menu mnemonicParsing="false" text="Update Info">
+               <items>
+                  <MenuItem fx:id="info" mnemonicParsing="false" onAction="#infoOnclick" text="Update Info" />
+               </items></Menu>
+          <Menu fx:id="comWithAdmin" mnemonicParsing="false" onAction="#comWithAdminOnclick" text="Communication">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Communication" />
+               </items></Menu>
+            <Menu fx:id="notice" mnemonicParsing="false" onAction="#noticeOnclick" text="Notice">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Notice" />
+               </items></Menu>
+            <Menu fx:id="finInfo" mnemonicParsing="false" onAction="#finInfoOnclick" text="Financial Info">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Financial Info" />
+               </items></Menu>
+        </menus>
+      </MenuBar>
+      <TextArea fx:id="dashtext" editable="false" layoutX="-1.0" layoutY="28.0" prefHeight="264.0" prefWidth="600.0" />
+      <ImageView fx:id="dashimage" fitHeight="109.0" fitWidth="600.0" layoutY="291.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="logout" layoutX="546.0" layoutY="-3.0" mnemonicParsing="false" onAction="#logoutOnclick" prefHeight="30.0" prefWidth="54.0" style="-fx-background-color: red;" text="Logout" textFill="#fffefe" />
+   </children>
+</AnchorPane>

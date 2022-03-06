@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bsccl.AdminComLSController">
+   <top>
+      <MenuBar style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+        <menus>
+            <Menu fx:id="adminHome" mnemonicParsing="false" onAction="#adminHomeOnclick" text="Home" />
+            <Menu fx:id="adminInfo" mnemonicParsing="false" onAction="#adminInfoOnclick" text="Information" />
+            <Menu mnemonicParsing="false" text="Communication">
+               <items>
+                  <MenuItem fx:id="comMin" mnemonicParsing="false" onAction="#comWithMin" text="Ministry" />
+                  <MenuItem fx:id="comcus" mnemonicParsing="false" onAction="#comWithCus" text="Customer" />
+                  <Menu mnemonicParsing="false" text="Landing Station">
+                     <items>
+                        <MenuItem fx:id="comCox" mnemonicParsing="false" onAction="#comCox" text="Coxbazar" />
+                        <MenuItem fx:id="comKKT" mnemonicParsing="false" onAction="#comKKT" text="Kuakata" />
+                     </items>
+                  </Menu>
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Approval">
+               <items>
+                  <MenuItem fx:id="approveSupp" mnemonicParsing="false" onAction="#approveSupp" text="Supplier" />
+                  <MenuItem fx:id="approveCus" mnemonicParsing="false" onAction="#approveCus" text="Customer" />
+               </items>
+            </Menu>
+            <Menu fx:id="tracking" mnemonicParsing="false" onAction="#trackingOnClick" text="Track" />
+            <Menu fx:id="logout" mnemonicParsing="false" onAction="#logoutOnclick" text="LOGOUT" />
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <TextArea fx:id="adminLStextarea" editable="false" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+   <left>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: black;" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#appendAtComLSfile" prefHeight="40.0" prefWidth="118.0" text="Send" />
+            <Button layoutX="10.0" layoutY="178.0" mnemonicParsing="false" onAction="#readFromComLSfile" prefHeight="40.0" prefWidth="118.0" text="Read" />
+         </children>
+      </VBox>
+   </left>
+   <bottom>
+      <TextField fx:id="adminLStextField" prefHeight="76.0" prefWidth="600.0" promptText="Write your text here" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>

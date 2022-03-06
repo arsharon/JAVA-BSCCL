@@ -1,0 +1,27 @@
+SEA-ME-WE 5:
+The SEA-ME-WE 5 (SMW5) is a 20,000km submarine cable system
+connecting 17 countries through Points-of-Presence (POPs) from 
+Singapore to the Middle East to France and Italy in Western Europe, 
+with an initial system design capacity of 24 Tbps over 3 fiber pairs.
+
+The SMW5 cable system has three fiber pairs between Singapore and
+ Egypt, and four fiber pairs crossing Egypt to Europe.
+
+The SEA-ME-WE 5 consortium consists of 19 leading telecom 
+operators, including BSCCL, China Mobile International, China 
+Telecom Global, China Unicom, Djibouti Telecom, Du, Myanmar Post 
+and Telecom, Orange, Ooredoo, Telin, Saudi Telecom, SingTel, 
+Sri Lanka Telecom, Telecom Italia Sparkle, Telecom Egypt, Telekom 
+Malaysia, Telecom Yemen, Turk Telecom and Transworld. The SMW5 
+consortium signed the construction and maintenace agreement on 
+March 7, 2014.
+
+Alcatel-Lucent and NEC were awarded the SMW5 supply contracts, 
+Alcatel-Lucent supplied the segments from Sri Lanka to France, while 
+NEC supplied the Singapore to Sri Lanka segment.
+
+The SMW5 cable system was ready for service on December 13, 2016.
+
+In August 2019, the SMW5 cable system completed an ungrade with 
+Ciena's coherent 200G DWDM technology, increasing SMW5 system 
+design capacity to 38Tbps.

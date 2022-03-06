@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bsccl.MinistryDashboardController">
+   <children>
+      <MenuBar layoutX="-2.0" prefHeight="29.0" prefWidth="549.0">
+        <menus>
+          <Menu fx:id="minHome" mnemonicParsing="false" onAction="#minHomeOnclick" text="Home" />
+          <Menu mnemonicParsing="false" text="Information">
+               <items>
+                  <MenuItem fx:id="minInfo" mnemonicParsing="false" onAction="#minInfoOnclick" text="Information" />
+               </items></Menu>
+            <Menu mnemonicParsing="false" text="Track">
+               <items>
+                  <MenuItem fx:id="minTrack" mnemonicParsing="false" onAction="#minTrackOnclick" text="Track" />
+               </items></Menu>
+            <Menu mnemonicParsing="false" text="Check">
+               <items>
+                  <MenuItem fx:id="minCheck" mnemonicParsing="false" onAction="#minCheckOnclick" text="Check" />
+               </items></Menu>
+            <Menu mnemonicParsing="false" text="Communication">
+               <items>
+                  <MenuItem fx:id="minCom" mnemonicParsing="false" onAction="#minComOnclick" text="Communication" />
+               </items></Menu>
+        </menus>
+      </MenuBar>
+      <TextArea fx:id="dashtext" editable="false" layoutX="-1.0" layoutY="29.0" prefHeight="262.0" prefWidth="600.0" />
+      <ImageView fx:id="dashimage" fitHeight="111.0" fitWidth="600.0" layoutY="290.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="logout" layoutX="547.0" layoutY="2.0" mnemonicParsing="false" onAction="#logoutOnclick" style="-fx-background-color: red;" text="Logout" textFill="#fffefe" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bsccl.MinComAdminController">
+   <children>
+      <MenuBar prefHeight="31.0" prefWidth="600.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+            <Menu fx:id="minHome" mnemonicParsing="false" onAction="#minHomeOnclick" text="Home" />
+            <Menu fx:id="minInfo" mnemonicParsing="false" onAction="#minInfoOnclick" text="Information" />
+            <Menu fx:id="minTrack" mnemonicParsing="false" onAction="#minTrackOnclick" text="Track" />
+            <Menu fx:id="minCheck" mnemonicParsing="false" onAction="#minCheckOnclick" text="Check" />
+            <Menu fx:id="minCom" mnemonicParsing="false" onAction="#minComOnclick" text="Communication" />
+            <Menu fx:id="logout" mnemonicParsing="false" onAction="#logout" text="LOGOUT" />
+        </menus>
+      </MenuBar>
+      <TextArea fx:id="adminMinTextarea" editable="false" layoutX="100.0" layoutY="31.0" prefHeight="296.0" prefWidth="499.0" />
+      <Button alignment="CENTER" layoutY="127.0" mnemonicParsing="false" onAction="#appendAtComMinFile" prefHeight="44.0" prefWidth="102.0" text="Send" />
+      <Button alignment="CENTER" layoutY="178.0" mnemonicParsing="false" onAction="#readFromComMinFile" prefHeight="44.0" prefWidth="102.0" text="Read" />
+      <TextField fx:id="adminMinTextField" layoutX="1.0" layoutY="327.0" prefHeight="73.0" prefWidth="600.0" promptText="Write your text here" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bsccl.LsComController">
+   <children>
+      <MenuBar prefHeight="35.0" prefWidth="600.0">
+         <menus>
+            <Menu fx:id="lsHome" mnemonicParsing="false" onAction="#lsHomeOnclick" text="Home" />
+            <Menu fx:id="info" mnemonicParsing="false" onAction="#infoOnclick" text="Update Info" />
+            <Menu fx:id="comWithAdmin" mnemonicParsing="false" onAction="#comWithAdminOnclick" text="Communication" />
+            <Menu fx:id="notice" mnemonicParsing="false" onAction="#noticeOnclick" text="Notice" />
+            <Menu fx:id="finInfo" mnemonicParsing="false" onAction="#finInfoOnclick" text="Financial Info" />
+            <Menu fx:id="logout" mnemonicParsing="false" onAction="#logout" text="LOGOUT" />
+         </menus>
+      </MenuBar>
+      <VBox alignment="CENTER" layoutY="35.0" prefHeight="366.0" prefWidth="100.0" style="-fx-background-color: black;">
+         <children>
+            <Button mnemonicParsing="false" onAction="#appendAtComLSfile" prefHeight="40.0" prefWidth="118.0" text="Send" />
+            <Button layoutX="10.0" layoutY="178.0" mnemonicParsing="false" onAction="#readFromComLSfile" prefHeight="40.0" prefWidth="118.0" text="Read" />
+         </children>
+      </VBox>
+      <TextArea fx:id="adminLStextarea" layoutX="102.0" layoutY="35.0" prefHeight="295.0" prefWidth="498.0" />
+      <TextField fx:id="adminLStextField" layoutX="100.0" layoutY="328.0" prefHeight="72.0" prefWidth="498.0" promptText="Write your text here" />
+   </children>
+</AnchorPane>

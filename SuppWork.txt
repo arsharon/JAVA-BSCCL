@@ -1,0 +1,8 @@
+Tender ID : T001,
+Starting Date : 2021-12-01,
+Finishing Date : 2021-12-31,
+Allocated Budget : 5 cr,
+Used Budget: 60,
+Completed Work : 50,
+Work Problems : No
+------------------------------------------------------------------------------------ 

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bsccl.SuppProfileController">
+   <children>
+      <MenuBar layoutY="-1.0" prefHeight="30.0" prefWidth="600.0">
+         <menus>
+            <Menu fx:id="suppHome" mnemonicParsing="false" onAction="#suppHomeOnaction" text="Home" />
+            <Menu fx:id="suppPerformance" mnemonicParsing="false" onAction="#suppPerformanceOnaction" text="Work Performance" />
+            <Menu fx:id="suppBid" mnemonicParsing="false" onAction="#suppBidOnaction" text="Bid" />
+            <Menu fx:id="suppTender" mnemonicParsing="false" onAction="#suppTenderOnaction" text="Tender" />
+            <Menu fx:id="suppSupport" mnemonicParsing="false" onAction="#suppSupportOnaction" text="Support" />
+            <Menu fx:id="suppProfile" mnemonicParsing="false" onAction="#suppProfileOnaction" text="Profile" />
+            <Menu fx:id="logout" mnemonicParsing="false" onAction="#logout" text="LOGOUT" />
+         </menus>
+      </MenuBar>
+      <Label alignment="CENTER" layoutX="75.0" layoutY="38.0" prefHeight="55.0" prefWidth="471.0" text="Profile Details">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="proEmail" layoutX="142.0" layoutY="111.0" prefHeight="5.0" prefWidth="149.0" />
+      <Label layoutX="75.0" layoutY="115.0" prefHeight="17.0" prefWidth="73.0" text="Email :" />
+      <Label layoutX="334.0" layoutY="115.0" prefHeight="17.0" prefWidth="73.0" text="Password :" />
+      <TextField fx:id="proPass" layoutX="407.0" layoutY="111.0" />
+      <Label layoutX="69.0" layoutY="159.0" prefHeight="17.0" prefWidth="73.0" text="Phone No. :" />
+      <TextField fx:id="proPhn" layoutX="142.0" layoutY="155.0" prefHeight="5.0" prefWidth="149.0" />
+      <Label layoutX="324.0" layoutY="159.0" prefHeight="17.0" prefWidth="94.0" text="Company Name :" />
+      <TextField fx:id="proComp" layoutX="418.0" layoutY="155.0" prefHeight="5.0" prefWidth="149.0" />
+      <TextField fx:id="proAdd" layoutX="149.0" layoutY="196.0" prefHeight="37.0" prefWidth="370.0" />
+      <Label layoutX="69.0" layoutY="206.0" prefHeight="17.0" prefWidth="73.0" text="Address :" />
+      <Button layoutX="232.0" layoutY="242.0" mnemonicParsing="false" onAction="#profileUpdateOnclick" prefHeight="27.0" prefWidth="158.0" style="-fx-background-color: green;" text="SUBMIT" textFill="#fcf8f8">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tableView" layoutX="9.0" layoutY="282.0" prefHeight="64.0" prefWidth="582.0">
+         <columns>
+            <TableColumn fx:id="email" prefWidth="75.0" text="Email" />
+            <TableColumn fx:id="pass" prefWidth="75.0" text="Password" />
+            <TableColumn fx:id="phn" prefWidth="75.0" text="Phone No." />
+            <TableColumn fx:id="compname" prefWidth="209.0" text="Address" />
+            <TableColumn fx:id="address" prefWidth="147.0" text="Company Name" />
+         </columns>
+      </TableView>
+      <Button layoutX="232.0" layoutY="356.0" mnemonicParsing="false" onAction="#updatetOnAction" prefHeight="30.0" prefWidth="158.0" style="-fx-background-color: blue;" text="Click Here to View!!" textFill="#fff8f8">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

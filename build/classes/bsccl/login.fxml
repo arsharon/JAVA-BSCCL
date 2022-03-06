@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="513.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bsccl.LoginController">
+   <children>
+      <Label contentDisplay="CENTER" layoutX="80.0" layoutY="98.0" prefHeight="31.0" prefWidth="82.0" text="Email">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label contentDisplay="CENTER" layoutX="80.0" layoutY="140.0" prefHeight="31.0" prefWidth="82.0" text="Password">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="80.0" layoutY="185.0" prefHeight="31.0" prefWidth="82.0" text="Designation">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="email" layoutX="162.0" layoutY="101.0" prefHeight="25.0" prefWidth="190.0" />
+      <ComboBox fx:id="designation" layoutX="162.0" layoutY="188.0" onAction="#designationOnaction" prefHeight="25.0" prefWidth="190.0" />
+      <Button fx:id="login" layoutX="164.0" layoutY="253.0" mnemonicParsing="false" onAction="#loginOnaction" prefHeight="25.0" prefWidth="190.0" style="-fx-background-color: green;" text="LOGIN">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="signup" layoutX="162.0" layoutY="296.0" mnemonicParsing="false" onAction="#signupOnaction" prefHeight="30.0" prefWidth="196.0" style="-fx-background-color: blue;" text="SIGNUP" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="desgLabel" layoutX="164.0" layoutY="223.0" prefHeight="17.0" prefWidth="190.0" />
+      <Label alignment="CENTER" layoutX="38.0" layoutY="21.0" prefHeight="61.0" prefWidth="425.0" style="-fx-background-color: brown;" text="Bangladesh Submarine Cable Company Limited (BSCCL)" textFill="#f2e9e9">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="showMessageLabel" layoutX="115.0" layoutY="223.0" prefHeight="17.0" prefWidth="285.0" />
+      <TextField fx:id="pass" layoutX="162.0" layoutY="143.0" prefHeight="25.0" prefWidth="190.0" />
+   </children>
+</AnchorPane>

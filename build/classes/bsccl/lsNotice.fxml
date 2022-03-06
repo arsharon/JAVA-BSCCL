@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bsccl.LsNoticeController">
+   <children>
+      <MenuBar layoutY="-1.0" prefHeight="30.0" prefWidth="600.0">
+         <menus>
+            <Menu fx:id="lsHome" mnemonicParsing="false" onAction="#lsHomeOnclick" text="Home" />
+            <Menu fx:id="info" mnemonicParsing="false" onAction="#infoOnclick" text="Update Info" />
+            <Menu fx:id="comWithAdmin" mnemonicParsing="false" onAction="#comWithAdminOnclick" text="Communication" />
+            <Menu fx:id="notice" mnemonicParsing="false" onAction="#noticeOnclick" text="Notice" />
+            <Menu fx:id="finInfo" mnemonicParsing="false" onAction="#finInfoOnclick" text="Financial Info" />
+            <Menu fx:id="logout" mnemonicParsing="false" onAction="#logout" text="LOGOUT" />
+         </menus>
+      </MenuBar>
+      <Button fx:id="saveNotice" layoutX="52.0" layoutY="144.0" mnemonicParsing="false" onAction="#saveNoticeOnaction" prefHeight="43.0" prefWidth="66.0" style="-fx-background-color: green;" text="Save" textFill="#fff8f8">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="viewNotice" layoutX="52.0" layoutY="233.0" mnemonicParsing="false" onAction="#viewNoticeOnaction" prefHeight="43.0" prefWidth="66.0" style="-fx-background-color: blue;" text="View" textFill="#f8f8f8">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="noticeTextField" layoutX="174.0" layoutY="81.0" prefHeight="300.0" prefWidth="413.0" />
+      <TextField fx:id="noticeFileName" layoutX="14.0" layoutY="101.0" />
+      <Label layoutX="47.0" layoutY="64.0" prefHeight="25.0" prefWidth="88.0" text="Enter File Name" />
+      <Label alignment="CENTER" layoutX="247.0" layoutY="47.0" prefHeight="25.0" prefWidth="127.0" text="Notices">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

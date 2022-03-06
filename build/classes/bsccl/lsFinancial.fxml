@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bsccl.LsFinancialController">
+   <children>
+      <MenuBar layoutY="-1.0" prefHeight="30.0" prefWidth="600.0">
+         <menus>
+            <Menu fx:id="lsHome" mnemonicParsing="false" onAction="#lsHomeOnclick" text="Home" />
+            <Menu fx:id="info" mnemonicParsing="false" onAction="#infoOnclick" text="Update Info" />
+            <Menu fx:id="comWithAdmin" mnemonicParsing="false" onAction="#comWithAdminOnclick" text="Communication" />
+            <Menu fx:id="notice" mnemonicParsing="false" onAction="#noticeOnclick" text="Notice" />
+            <Menu fx:id="finInfo" mnemonicParsing="false" onAction="#finInfoOnclick" text="Financial Info" />
+            <Menu fx:id="logout" mnemonicParsing="false" onAction="#logout" text="LOGOUT" />
+         </menus>
+      </MenuBar>
+      <Label layoutX="73.0" layoutY="76.0" prefHeight="30.0" prefWidth="114.0" text="Allocated Budget :" />
+      <Label layoutX="76.0" layoutY="127.0" prefHeight="30.0" prefWidth="114.0" text="Remaining Budget :" />
+      <Label layoutX="76.0" layoutY="176.0" prefHeight="30.0" prefWidth="114.0" text="Expenses sector :" />
+      <Label layoutX="73.0" layoutY="220.0" prefHeight="49.0" prefWidth="137.0" text="Special informations :" />
+      <Label alignment="CENTER" layoutX="196.0" layoutY="40.0" prefHeight="30.0" prefWidth="187.0" text="Financial Information" underline="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="finAllBudget" layoutX="187.0" layoutY="81.0" prefHeight="25.0" prefWidth="280.0" />
+      <TextField fx:id="finRemBudget" layoutX="190.0" layoutY="130.0" prefHeight="25.0" prefWidth="280.0" />
+      <TextField fx:id="finExpen" layoutX="190.0" layoutY="179.0" prefHeight="25.0" prefWidth="280.0" />
+      <TextArea fx:id="finspecial" layoutX="193.0" layoutY="226.0" prefHeight="104.0" prefWidth="287.0" />
+      <Button fx:id="finSubmit" layoutX="239.0" layoutY="345.0" mnemonicParsing="false" onAction="#finSubmitOnaction" prefHeight="25.0" prefWidth="149.0" style="-fx-background-color: green;" text="Submit" textFill="#f8f5f5">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <DatePicker fx:id="finDate" layoutX="412.0" layoutY="43.0" prefHeight="25.0" prefWidth="137.0" promptText="Date" />
+   </children>
+</AnchorPane>

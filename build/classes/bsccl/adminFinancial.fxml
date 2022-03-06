@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bsccl.AdminFinancialController">
+   <children>
+      <MenuBar layoutY="-3.0" prefHeight="35.0" prefWidth="600.0">
+         <menus>
+            <Menu fx:id="adminHome" mnemonicParsing="false" onAction="#adminHomeOnclick" text="Home" />
+            <Menu fx:id="adminInfo" mnemonicParsing="false" onAction="#adminInfoOnclick" text="Information" />
+            <Menu mnemonicParsing="false" text="Communication">
+               <items>
+                  <MenuItem fx:id="comMin" mnemonicParsing="false" onAction="#comWithMin" text="Ministry" />
+                  <MenuItem fx:id="comcus" mnemonicParsing="false" onAction="#comWithCus" text="Customer" />
+                  <Menu mnemonicParsing="false" text="Landing Station">
+                     <items>
+                        <MenuItem fx:id="comCox" mnemonicParsing="false" onAction="#comCox" text="Coxbazar" />
+                        <MenuItem fx:id="comKKT" mnemonicParsing="false" onAction="#comKKT" text="Kuakata" />
+                     </items>
+                  </Menu>
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Approval">
+               <items>
+                  <MenuItem fx:id="approveSupp" mnemonicParsing="false" onAction="#approveSupp" text="Supplier" />
+                  <MenuItem fx:id="approveCus" mnemonicParsing="false" onAction="#approveCus" text="Customer" />
+                  <MenuItem fx:id="approvePackages" mnemonicParsing="false" onAction="#approvePackages" text="Packages" />
+               </items>
+            </Menu>
+            <Menu fx:id="tracking" mnemonicParsing="false" onAction="#trackingOnClick" text="Track" />
+            <Menu fx:id="logout" mnemonicParsing="false" onAction="#logoutOnclick" text="LOGOUT" />
+         </menus>
+      </MenuBar>
+      <Label alignment="CENTER" layoutX="196.0" layoutY="47.0" prefHeight="46.0" prefWidth="216.0" text="View Financial Information">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="adminViewFin" layoutX="242.0" layoutY="108.0" mnemonicParsing="false" onAction="#adminViewFinOnaction" prefHeight="46.0" prefWidth="106.0" style="-fx-background-color: blue;" text="Click Here!" textFill="#f8efef">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="adminViewFinTextField" layoutX="18.0" layoutY="169.0" prefHeight="200.0" prefWidth="569.0" />
+   </children>
+</AnchorPane>

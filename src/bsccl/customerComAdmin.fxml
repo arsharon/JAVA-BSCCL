@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bsccl.CustomerComAdminController">
+   <children>
+      <MenuBar layoutY="1.0" prefHeight="27.0" prefWidth="600.0">
+         <menus>
+            <Menu fx:id="cusHome" mnemonicParsing="false" onAction="#cusHomeOnaction" text="Home" />
+            <Menu fx:id="cusCheck" mnemonicParsing="false" onAction="#cusCheckOnaction" text="Check" />
+            <Menu fx:id="cusComm" mnemonicParsing="false" onAction="#cusCommOnaction" text="Communication" />
+            <Menu fx:id="cusForm" mnemonicParsing="false" onAction="#cusFormOnaction" text="Form" />
+            <Menu fx:id="cusSupport" mnemonicParsing="false" onAction="#cusSupportOnaction" text="Support" />
+            <Menu fx:id="cusProfile" mnemonicParsing="false" onAction="#cusProfileOnaction" text="Profile" />
+            <Menu fx:id="logout" mnemonicParsing="false" onAction="#logout" text="LOGOUT" />
+         </menus>
+      </MenuBar>
+      <TextArea fx:id="adminCusTextArea" editable="false" layoutX="105.0" layoutY="28.0" prefHeight="302.0" prefWidth="495.0" />
+      <Button layoutY="145.0" mnemonicParsing="false" onAction="#appendAtComCusFile" prefHeight="33.0" prefWidth="106.0" text="Send" />
+      <Button layoutY="198.0" mnemonicParsing="false" onAction="#ReadFromComCusFile" prefHeight="33.0" prefWidth="106.0" text="Read" />
+      <TextField fx:id="adminCusTextField2" layoutX="-1.0" layoutY="328.0" prefHeight="73.0" prefWidth="600.0" promptText="Enter your text here" />
+   </children>
+</AnchorPane>

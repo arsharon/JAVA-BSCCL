@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bsccl.MinViewWorkController">
+   <children>
+      <MenuBar prefHeight="29.0" prefWidth="600.0">
+        <menus>
+            <Menu fx:id="minHome" mnemonicParsing="false" onAction="#minHomeOnclick" text="Home" />
+            <Menu fx:id="minInfo" mnemonicParsing="false" onAction="#minInfoOnclick" text="Information" />
+            <Menu fx:id="minTrack" mnemonicParsing="false" onAction="#minTrackOnclick" text="Track" />
+            <Menu fx:id="minCheck" mnemonicParsing="false" onAction="#minCheckOnclick" text="Check" />
+            <Menu fx:id="minCom" mnemonicParsing="false" onAction="#minComOnclick" text="Communication" />
+            <Menu fx:id="logout" mnemonicParsing="false" onAction="#logout" text="LOGOUT" />
+        </menus>
+      </MenuBar>
+      <Label alignment="CENTER" layoutX="185.0" layoutY="45.0" prefHeight="29.0" prefWidth="230.0" text="Work Performance">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="workPerformanceTextArea" editable="false" layoutX="109.0" layoutY="83.0" prefHeight="277.0" prefWidth="450.0" />
+      <Button layoutX="23.0" layoutY="195.0" mnemonicParsing="false" onAction="#loadWorkPerformance" prefHeight="40.0" prefWidth="67.0" text="Load" />
+   </children>
+</AnchorPane>

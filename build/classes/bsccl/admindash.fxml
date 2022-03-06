@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bsccl.AdmindashController">
+   <top>
+      <MenuBar prefHeight="35.0" prefWidth="569.0" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu fx:id="adminHome" mnemonicParsing="false" onAction="#adminHomeOnclick" text="Home" />
+            <Menu mnemonicParsing="false" text="Information">
+               <items>
+                  <MenuItem fx:id="adminInfo" mnemonicParsing="false" onAction="#adminInfoOnclick" text="Information" />
+               </items></Menu>
+          <Menu mnemonicParsing="false" text="Communication">
+            <items>
+              <MenuItem fx:id="comMin" mnemonicParsing="false" onAction="#comWithMin" text="Ministry" />
+                  <MenuItem fx:id="comcus" mnemonicParsing="false" onAction="#comWithCus" text="Customer" />
+                  <Menu mnemonicParsing="false" text="Landing Station">
+                    <items>
+                      <MenuItem fx:id="comCox" mnemonicParsing="false" onAction="#comCox" text="Coxbazar" />
+                        <MenuItem fx:id="comKKT" mnemonicParsing="false" onAction="#comKKT" text="Kuakata" />
+                    </items>
+                  </Menu>
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Approval">
+               <items>
+                  <MenuItem fx:id="approveSupp" mnemonicParsing="false" onAction="#approveSupp" text="Supplier" />
+                  <MenuItem fx:id="approveCus" mnemonicParsing="false" onAction="#approveCus" text="Customer" />
+                  <MenuItem fx:id="approvePackages" mnemonicParsing="false" onAction="#approvePackages" text="Packages" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Track">
+               <items>
+                  <MenuItem fx:id="tracking" mnemonicParsing="false" onAction="#trackingOnClick" text="Track" />
+               </items></Menu>
+            <Menu mnemonicParsing="false" text="Requested Users">
+               <items>
+                  <MenuItem fx:id="reqUsers" mnemonicParsing="false" onAction="#reqUsersOnClick" text="Requested Users" />
+               </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <bottom>
+      <ImageView fx:id="dashimage" fitHeight="116.0" fitWidth="598.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+   </bottom>
+   <center>
+      <TextArea fx:id="dashtext" editable="false" prefHeight="189.0" prefWidth="600.0" style="-fx-border-color: white;" BorderPane.alignment="CENTER" />
+   </center>
+   <right>
+      <VBox prefHeight="249.0" prefWidth="63.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="logout" mnemonicParsing="false" onAction="#logoutOnclick" prefHeight="25.0" prefWidth="70.0" style="-fx-background-color: red;" text="LOGOUT" textFill="#fff4f4" />
+         </children>
+      </VBox>
+   </right>
+</BorderPane>

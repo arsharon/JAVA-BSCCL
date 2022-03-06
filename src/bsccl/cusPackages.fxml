@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bsccl.CusPackagesController">
+   <children>
+      <MenuBar layoutY="1.0" prefHeight="27.0" prefWidth="600.0">
+         <menus>
+            <Menu fx:id="cusHome" mnemonicParsing="false" onAction="#cusHomeOnaction" text="Home" />
+            <Menu fx:id="cusCheck" mnemonicParsing="false" onAction="#cusCheckOnaction" text="Check" />
+            <Menu fx:id="cusComm" mnemonicParsing="false" onAction="#cusCommOnaction" text="Communication" />
+            <Menu fx:id="cusForm" mnemonicParsing="false" onAction="#cusFormOnaction" text="Form" />
+            <Menu fx:id="cusSupport" mnemonicParsing="false" onAction="#cusSupportOnaction" text="Support" />
+            <Menu fx:id="cusProfile" mnemonicParsing="false" onAction="#cusProfileOnaction" text="Profile" />
+            <Menu fx:id="packages" mnemonicParsing="false" onAction="#packagesOnaction" text="Packages" />
+            <Menu fx:id="logout" mnemonicParsing="false" onAction="#logout" text="LOGOUT" />
+         </menus>
+      </MenuBar>
+      <Button fx:id="seepackage" layoutX="245.0" layoutY="106.0" mnemonicParsing="false" onAction="#seepackageOnclick" prefHeight="45.0" prefWidth="111.0" style="-fx-background-color: blue;" text="Click Here!" textFill="#fff7f7">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="211.0" layoutY="46.0" prefHeight="45.0" prefWidth="179.0" text="Packages">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableview" layoutX="64.0" layoutY="167.0" prefHeight="200.0" prefWidth="472.0">
+        <columns>
+          <TableColumn fx:id="packIDadmin" prefWidth="151.0" text="Package ID" />
+          <TableColumn fx:id="packBandadmin" prefWidth="156.0" text="Bandwidth" />
+            <TableColumn fx:id="packPriceadmin" prefWidth="164.0" text="Price" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

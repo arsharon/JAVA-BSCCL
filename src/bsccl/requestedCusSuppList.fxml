@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bsccl.RequestedCusSuppListController">
+   <children>
+      <MenuBar layoutX="-1.0" layoutY="-2.0" prefHeight="30.0" prefWidth="600.0">
+        <menus>
+            <Menu fx:id="adminHome" mnemonicParsing="false" onAction="#adminHomeOnclick" text="Home" />
+            <Menu fx:id="adminInfo" mnemonicParsing="false" onAction="#adminInfoOnclick" text="Information" />
+            <Menu mnemonicParsing="false" text="Communication">
+               <items>
+                  <MenuItem fx:id="comMin" mnemonicParsing="false" onAction="#comWithMin" text="Ministry" />
+                  <MenuItem fx:id="comcus" mnemonicParsing="false" onAction="#comWithCus" text="Customer" />
+                  <Menu mnemonicParsing="false" text="Landing Station">
+                     <items>
+                        <MenuItem fx:id="comCox" mnemonicParsing="false" onAction="#comCox" text="Coxbazar" />
+                        <MenuItem fx:id="comKKT" mnemonicParsing="false" onAction="#comKKT" text="Kuakata" />
+                     </items>
+                  </Menu>
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Approval">
+               <items>
+                  <MenuItem fx:id="approveSupp" mnemonicParsing="false" onAction="#approveSupp" text="Supplier" />
+                  <MenuItem fx:id="approveCus" mnemonicParsing="false" onAction="#approveCus" text="Customer" />
+               </items>
+            </Menu>
+            <Menu fx:id="tracking" mnemonicParsing="false" onAction="#trackingOnClick" text="Track" />
+            <Menu fx:id="logout" mnemonicParsing="false" onAction="#logoutOnclick" text="LOGOUT" />
+        </menus>
+      </MenuBar>
+      <Button fx:id="viewRequestedCustomer" layoutX="81.0" layoutY="60.0" mnemonicParsing="false" onAction="#viewRequestedCustomerOnclick" prefHeight="37.0" prefWidth="167.0" text="View Requested Customer" />
+      <Button fx:id="viewRequestedSupplier" layoutX="357.0" layoutY="60.0" mnemonicParsing="false" onAction="#viewRequestedSupplierOnclick" prefHeight="37.0" prefWidth="155.0" text="View Requested Supplier" />
+      <TextArea fx:id="requestedList" editable="false" layoutX="46.0" layoutY="116.0" prefHeight="244.0" prefWidth="500.0" />
+   </children>
+</AnchorPane>

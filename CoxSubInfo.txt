@@ -1,0 +1,12 @@
+The South East Asia-Middle East-West Europe 4 (SEA-ME-WE 4, SMW4) 
+is an approximately 18,800 km submarine cable connecting Singapore, 
+Malaysia, Thailand, Bangladesh, India, Sri Lanka, Pakistan, United Arab 
+Emirates, Saudi Arabia, Egypt, Italy, Tunisia, Algeria and France.
+
+The SMW4 cable system consists of two fiber pairs, with intial design 
+capacity of 1.28Tbps, upgraded to 4.6Tbps in 2015.
+
+The SMW4 cable system was ready for service on December 13, 2005.
+
+The SMW4 project costs about US$500 million, supplier by ASN and 
+Fujitsu jointly.

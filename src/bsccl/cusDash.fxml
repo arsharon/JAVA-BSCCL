@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bsccl.CusDashController">
+   <top>
+      <MenuBar prefHeight="27.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu fx:id="cusHome" mnemonicParsing="false" onAction="#cusHomeOnaction" text="Home" />
+          <Menu mnemonicParsing="false" text="Check">
+               <items>
+                  <MenuItem fx:id="cusCheck" mnemonicParsing="false" onAction="#cusCheckOnaction" text="Check" />
+               </items></Menu>
+            <Menu mnemonicParsing="false" text="Communication">
+               <items>
+                  <MenuItem fx:id="cusComm" mnemonicParsing="false" onAction="#cusCommOnaction" text="Communication" />
+               </items></Menu>
+            <Menu mnemonicParsing="false" text="Form">
+               <items>
+                  <MenuItem fx:id="cusForm" mnemonicParsing="false" onAction="#cusFormOnaction" text="Form" />
+               </items></Menu>
+            <Menu mnemonicParsing="false" text="Support">
+               <items>
+                  <MenuItem fx:id="cusSupport" mnemonicParsing="false" onAction="#cusSupportOnaction" text="Support" />
+               </items></Menu>
+            <Menu mnemonicParsing="false" text="Profile">
+               <items>
+                  <MenuItem fx:id="cusProfile" mnemonicParsing="false" onAction="#cusProfileOnaction" text="Profile" />
+               </items></Menu>
+            <Menu mnemonicParsing="false" text="Packages">
+               <items>
+                  <MenuItem fx:id="packages" mnemonicParsing="false" onAction="#packagesOnaction" text="Packages" />
+               </items></Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <TextArea fx:id="dashtext" editable="false" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+   <bottom>
+      <ImageView fx:id="dashimage" fitHeight="109.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+   </bottom>
+   <right>
+      <VBox prefHeight="264.0" prefWidth="64.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="logout" mnemonicParsing="false" onAction="#logoutOnclick" prefHeight="25.0" prefWidth="77.0" style="-fx-background-color: red;" text="LOGOUT" textFill="#fffdfd" />
+         </children>
+      </VBox>
+   </right>
+</BorderPane>

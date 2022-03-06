@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bsccl.MinCheckController">
+   <children>
+      <MenuBar layoutY="-1.0" prefHeight="31.0" prefWidth="600.0">
+        <menus>
+            <Menu fx:id="minHome" mnemonicParsing="false" onAction="#minHomeOnclick" text="Home" />
+            <Menu fx:id="minInfo" mnemonicParsing="false" onAction="#minInfoOnclick" text="Information" />
+            <Menu fx:id="minTrack" mnemonicParsing="false" onAction="#minTrackOnclick" text="Track" />
+            <Menu fx:id="minCheck" mnemonicParsing="false" onAction="#minCheckOnclick" text="Check" />
+            <Menu fx:id="minCom" mnemonicParsing="false" onAction="#minComOnclick" text="Communication" />
+            <Menu fx:id="logout" mnemonicParsing="false" onAction="#logout" text="LOGOUT" />
+        </menus>
+      </MenuBar>
+      <Button layoutX="77.0" layoutY="67.0" mnemonicParsing="false" onAction="#viewFromCusListOnclick" prefHeight="41.0" prefWidth="183.0" text="View Approved Customers" />
+      <Button layoutX="362.0" layoutY="67.0" mnemonicParsing="false" onAction="#viewSupp" prefHeight="41.0" prefWidth="183.0" text="View Approved Supplier" />
+      <TableView fx:id="tableview" layoutX="14.0" layoutY="139.0" prefHeight="236.0" prefWidth="277.0">
+         <columns>
+            <TableColumn fx:id="cusCompName" prefWidth="163.0" text="Company Name" />
+            <TableColumn fx:id="cusPackageId" prefWidth="113.0" text="Package ID" />
+         </columns>
+      </TableView>
+      <TableView fx:id="tableview2" layoutX="306.0" layoutY="139.0" prefHeight="236.0" prefWidth="285.0">
+         <columns>
+            <TableColumn fx:id="suppcompanyname" prefWidth="168.0" text="Company Name" />
+            <TableColumn fx:id="supptender" prefWidth="130.0" text="Tender ID" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>
